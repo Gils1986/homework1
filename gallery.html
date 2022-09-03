@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <title>המאפייה הראשונה שלי</title>
+    <link rel="stylesheet" href="My_css.css" />
+    <meta charset="UTF-8"/>
+    <meta type="description" content="עמוד של מאפיית בוטיק שמציעה מגוון שירותים"/>
+    <meta type="keywords" content="לחם, עוגיות, באגט, קייטרינג חלבי, מגשי אירוח, קוראסון"/>
+ </head>
+ <body>
+  <br>
+    <div class="header">
+        <br>
+        <h1>המאפייה של גילי</h1>
+        <br><br><br><br>
+      <div class="link">
+        <a href="index.html">עמוד ראשי</a>
+        <a href="catering.html">הקייטרינג</a>
+        <a href="gallery.html">גלרייה</a>
+        <a href="franchise.html">זכיינות</a>
+        <a href="conectus.html">צור קשר</a>
+      </div>
+    </div>
+<div class="container3">
+    <h1 style="text-align: center;">הגלרייה שלנו</h1>
+    <div class="gallery">
+        <h2>ארוחת בוקר בבית הלקוח -</h2>
+        <img src="https://cdn.pixabay.com/photo/2018/02/07/14/11/food-3137152__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2019/01/07/13/55/buffet-3919191__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2017/09/23/12/40/catering-2778755__340.jpg">
+        </div>
+    <div class="gallery">
+        <h2>מגשי אירוח מתוקים ומלוחים -</h2>
+        <img src="https://media.istockphoto.com/photos/catering-service-concept-assorted-snacks-served-at-a-business-event-picture-id1136495760?k=20&m=1136495760&s=612x612&w=0&h=UkPUMM5N21DMKbkhL6u9KUBvipvyoQ9csCE57D8PJbY=">
+        <img src="https://media.istockphoto.com/photos/final-touch-for-tasty-canapes-picture-id498472863">
+        <img src="https://media.istockphoto.com/photos/closeup-of-fresh-display-of-stacked-pile-of-panini-bread-mozzarella-picture-id1081696802?k=20&m=1081696802&s=612x612&w=0&h=7xU04RfNy-Bz81ou7TxxJMG5imxjuXcj3DM8H9oq_UQ=">
+    </div>
+    <div class="gallery">
+        <h2>הרמת כוסית לחברות -</h2>
+        <img src="https://cdn.pixabay.com/photo/2018/01/16/00/37/reception-3085114__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2021/10/14/07/03/drink-6708289__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2017/08/25/14/15/ketering-2680316__340.jpg">
+       </div>
+    <div class="gallery">
+        <h2>בר קינוחים ''מחנה יהודה''</h2>
+        <img src="https://idprayzler.co.il/wp-content/uploads/2021/01/%D7%9B-1200-%D7%A9%D7%97-2.jpg">
+        <img src="https://www.just4u.co.il/Pictures/SuppLogo_32395_%D7%91%D7%90%D7%91%D7%99%D7%9C%D7%95.jpg">
+        <img src="https://idprayzler.co.il/wp-content/uploads/2021/01/%D7%9E%D7%92%D7%A9-%D7%90%D7%AA%D7%A8-1-1-1.jpg">
+    </div>
+    <div class="gallery">
+        <h2>עוגות בוטיק בהזמנה אישית</h2>
+        <img src="https://cdn.pixabay.com/photo/2016/03/27/22/38/cake-1284548__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2017/10/16/09/02/cake-2856551__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2017/02/10/01/11/wedding-reception-2054002__340.jpg">
+    </div>
+</div>
+    <div class="footer">
+        add_action( 'wp_footer', 'my_footer_scripts' );
+        function my_footer_scripts(){
+          ?>
+          <script>
+        
+        function addLogoCTA() {
+            var link = "https://api.whatsapp.com/send?phone=9508221143&text=%D7%AA%D7%95%D7%93%D7%94%20%D7%A2%D7%9C%20%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%94%D7%9E%D7%93%D7%94%D7%99%D7%9D";
+            var logo = 'https://static.whatsapp.net/rsrc.php/yz/r/lOol7j-zq4u.svg';
+            var tag = document.createElement("a");
+            tag.style.position = "fixed";
+            tag.style.bottom = "0";
+            tag.style.zIndex = "100";
+            tag.href = link;
+            tag.target = "_blank";
+            tag.rel = "noopener noreferrer";
+            var ctaButton = document.createElement('img');
+            ctaButton.style.height = "100px";
+            ctaButton.style.width = "100px";
+            ctaButton.src = logo;
+            tag.appendChild(ctaButton);
+            document.body.appendChild(tag);
+        }
+        addLogoCTA();
+        
+        </script>
+          <?php
+        <p>זכויות יוצרים של האתר שייכות לגיל שטרמן -מתכנת אתרים מורשה</p>
+        <p>לפרטים: מייל gil.shterman@gmail.com</p>
+    </div>
+ </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <title>המאפייה הראשונה שלי</title>
+    <link rel="stylesheet" href="My_css.css" />
+    <meta charset="UTF-8"/>
+    <meta type="description" content="עמוד של מאפיית בוטיק שמציעה מגוון שירותים"/>
+    <meta type="keywords" content="לחם, עוגיות, באגט, קייטרינג חלבי, מגשי אירוח, קוראסון"/>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+  <br>
+    <div class="header">
+        <br>
+        <h1>המאפייה של גילי</h1>
+        <br><br><br><br>
+      <div class="link">
+        <a href="index.html">עמוד ראשי</a>
+        <a href="catering.html">הקייטרינג</a>
+        <a href="gallery.html">גלרייה</a>
+        <a href="franchise.html">זכיינות</a>
+        <a href="conectus.html">צור קשר</a>
+      </div>
+    </div>
+    
+       <h3><span style="font-size:60px;">עמוד ליצירת קשר</span> 
+        <br>
+      <span style="font-size: 28px;">השאירו פרטים ונושא פנייה ונחזור אליכם בהקדם</span>
+       <br><br><br><br>
+     <div class="form">
+          <form method="post" action="mailto:gil.shterman@gmail.com">
+            <label for="fname">שם פרטי:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">שם משפחה:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="tel">מספר טלפון:</label>
+            <input type="number" id="tel" name="tel"><br><br>
+            <label for="mail">המייל שלך:</label>
+            <input type="text" id="mail" name="mail"><br><br>
+            <label for="subject">ההודעה שלי:</label>
+            <input type="text" id="subject" name="subject">
+            <label for="subject">נושא</label>
+            <!-- <input type="text"> -->
+            <input list="browsers" name="browser">
+             <datalist id="browsers">
+              <option value="זכיינות">
+              <option value="קייטרינג">
+              <option value="מחפש עבודה">
+              <option value="שירות לקוחות">
+              <option value="שובר מתנה">
+             </datalist><br><br>
+            <input type="submit" value="שלח">
+          </form>
+        </h3>
+    </div>
+    <br><br>
+    <div class="footer">
+        add_action( 'wp_footer', 'my_footer_scripts' );
+        function my_footer_scripts(){
+          ?>
+          <script>
+        
+        function addLogoCTA() {
+            var link = "https://api.whatsapp.com/send?phone=9508221143&text=%D7%AA%D7%95%D7%93%D7%94%20%D7%A2%D7%9C%20%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%94%D7%9E%D7%93%D7%94%D7%99%D7%9D";
+            var logo = 'https://static.whatsapp.net/rsrc.php/yz/r/lOol7j-zq4u.svg';
+            var tag = document.createElement("a");
+            tag.style.position = "fixed";
+            tag.style.bottom = "0";
+            tag.style.zIndex = "100";
+            tag.href = link;
+            tag.target = "_blank";
+            tag.rel = "noopener noreferrer";
+            var ctaButton = document.createElement('img');
+            ctaButton.style.height = "100px";
+            ctaButton.style.width = "100px";
+            ctaButton.src = logo;
+            tag.appendChild(ctaButton);
+            document.body.appendChild(tag);
+        }
+        addLogoCTA();
+        
+        </script>
+          <?php
+        <p>זכויות יוצרים של האתר שייכות לגיל שטרמן -מתכנת אתרים מורשה</p>
+        <p>לפרטים: מייל gil.shterman@gmail.com</p>
+    </div>
+</body>
+</html>

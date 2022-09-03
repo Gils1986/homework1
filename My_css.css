@@ -1,0 +1,169 @@
+.header {
+  background-image: url(https://media.istockphoto.com/photos/fresh-bread-on-shelves-in-bakery-picture-id663898216?k=20&m=663898216&s=612x612&w=0&h=Jtpqalgq_w0XpBzko3WGG_CNQbGOq0BoCHd10bzhb78=);
+  /* margin: auto; */
+  text-align: center;
+  color: rgb(230, 233, 233);
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+  width: 1920px;
+  height: 200px;
+  /* display: flex; */
+}
+
+.container1 {
+  display: flex;
+  background-color: black;
+  color: azure;
+  padding: 10px;
+}
+
+.container2 {
+  display: flex;
+  background-color: black;
+  color: azure;
+  padding: 10px;
+}
+
+.container {
+  background-color: black;
+  color: aliceblue;
+  float: right;
+  text-align: center;
+}
+.container img{
+  width: 550px;
+}
+.box {
+  padding: 10px;
+  /* float: right;  */
+  margin: 10px;
+  border: solid 5px rgb(149, 140, 151);
+}
+
+.footer {
+  background-color: gray;
+  text-align: center;
+  border: solid;
+}
+
+body {
+  background-color: gray;
+  /* text-align: center; */
+}
+
+a {
+  color: azure;
+}
+
+.A1 {
+  float: right;
+  direction: rtl;
+  margin: 20px;
+  padding: 20px;
+}
+.movies {
+  display: flex;
+  padding: 50px;
+}
+.movie {
+  padding: 20px; */
+  /* /* border: solid 40px; */
+}
+.form {
+  width: 50%;
+ direction: rtl;
+ text-align: center;
+ 
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[list="browsers"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+h1{
+  color: azure;
+}
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 33%;
+}
+img{
+  padding: 10px;
+  
+}
+.container3{
+  direction: rtl;
+  
+}
+
+img{
+  width: 700px;
+  height: 300px;
+}
+
+.box1{
+  border: solid;
+  border-color: saddlebrown;
+  width: 725px;
+}
+.container4{
+  text-align: center;
+ align-content: center;
+ direction: rtl;
+}
+.container5{
+display: flex;
+}
+ 
+.box1 img{
+  width: 400px;
+}
+p{
+  direction: rtl;
+  
+}
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
