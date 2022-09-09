@@ -1,17 +1,16 @@
 .header {
   background-image: url(https://media.istockphoto.com/photos/fresh-bread-on-shelves-in-bakery-picture-id663898216?k=20&m=663898216&s=612x612&w=0&h=Jtpqalgq_w0XpBzko3WGG_CNQbGOq0BoCHd10bzhb78=);
-  /* margin: auto; */
   text-align: center;
   color: rgb(230, 233, 233);
   font-family: Arial, Helvetica, sans-serif;
   float: right;
-  width: 1920px;
+  width: 100%;
   height: 200px;
-  /* display: flex; */
 }
 
 .container1 {
   display: flex;
+  flex-direction: row;
   background-color: black;
   color: azure;
   padding: 10px;
@@ -19,23 +18,27 @@
 
 .container2 {
   display: flex;
+  flex-direction: row;
   background-color: black;
   color: azure;
   padding: 10px;
 }
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
+
   background-color: black;
-  color: aliceblue;
-  float: right;
+  color: azure;
+  /* float: right; */
   text-align: center;
+  align-items: center;
 }
-.container img{
+.container img {
   width: 550px;
 }
 .box {
   padding: 10px;
-  /* float: right;  */
   margin: 10px;
   border: solid 5px rgb(149, 140, 151);
 }
@@ -48,7 +51,6 @@
 
 body {
   background-color: gray;
-  /* text-align: center; */
 }
 
 a {
@@ -66,14 +68,14 @@ a {
   padding: 50px;
 }
 .movie {
-  padding: 20px; */
-  /* /* border: solid 40px; */
+  padding: 20px;
+  /* border: solid 40px; */
 }
 .form {
   width: 50%;
- direction: rtl;
- text-align: center;
- 
+  direction: rtl;
+  text-align: center;
+  margin: 0 auto;
 }
 input[type="text"],
 select {
@@ -114,50 +116,46 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-
 }
-h1{
+h1 {
   color: azure;
 }
-.gallery{
+.gallery {
   display: flex;
   flex-direction: row;
   flex-basis: 33%;
 }
-img{
+img {
   padding: 10px;
-  
 }
-.container3{
+.container3 {
   direction: rtl;
-  
 }
 
-img{
+img {
   width: 700px;
   height: 300px;
 }
 
-.box1{
+.box1 {
   border: solid;
   border-color: saddlebrown;
   width: 725px;
 }
-.container4{
+.container4 {
   text-align: center;
- align-content: center;
- direction: rtl;
+  align-content: center;
+  direction: rtl;
 }
-.container5{
-display: flex;
+.container5 {
+  display: flex;
 }
- 
-.box1 img{
+
+.box1 img {
   width: 400px;
 }
-p{
+p {
   direction: rtl;
-  
 }
 .header {
   position: -webkit-sticky;
@@ -165,5 +163,54 @@ p{
   top: 0;
   padding: 5px;
   background-color: #cae8ca;
-  border: 2px solid #4CAF50;
+  border: 2px solid #4caf50;
 }
+
+@media (min-width: 600px) {
+  body {
+    background-color: rgb(116, 216, 22);
+  }
+  .container1 {
+    flex-direction: column;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: aqua;
+  }
+  .container1 {
+    flex-direction: column;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(137, 35, 141);
+  }
+  .container1 {
+    flex-direction: column;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-color: rgb(137, 35, 141);
+  }
+  .container1 {
+    flex-direction: row;
+  }
+  .container2 {
+    flex-direction: row;
+  }
+}
+/C/Users/Nava/Desktop/homework1
